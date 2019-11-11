@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://wkAdmin:My2dogs95@devconnector-czl23.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "DoobieAndKitty"
+  "jwtSecret": "DoobieAndKitty",
+  "GITHUB_CLIENT_ID": "c86e0cdffaf375dc6dd1",
+  "GITHUB_CLIENT_SECRET": "f27849b8281fd763d1bbf610cbe6fcb8a82ea595"
 }
