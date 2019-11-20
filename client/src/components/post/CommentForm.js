@@ -3,15 +3,17 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {addComment} from '../../actions/post';
 
-const CommentForm = ({addComment}) => {
+const CommentForm = ({postId, addComment}) => {
+  const [text, setText] = useState('');
+
   return (
     <div class="post-form">
       <div class="bg-primary p">
-        <h3>Say Something...</h3>
+        <h3>Leave a Comment</h3>
       </div>
       <form class="form my-1" onSubmit={e => {
         e.preventDefault();
-        addPost({text});
+        addComment(postId, {text});
         setText('');
       }}>
         <textarea
